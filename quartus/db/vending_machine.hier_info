@@ -1,0 +1,12 @@
+|vending_machine
+clk_i => current_state~1.DATAIN
+rst_ni => current_state~3.DATAIN
+nickle_i => Decoder0.IN0
+dime_i => Decoder0.IN1
+quarter_i => Decoder0.IN2
+soda_o <= WideNor1.DB_MAX_OUTPUT_PORT_TYPE
+change_o[0] <= change_o.DB_MAX_OUTPUT_PORT_TYPE
+change_o[1] <= change_o.DB_MAX_OUTPUT_PORT_TYPE
+change_o[2] <= change_o[2].DB_MAX_OUTPUT_PORT_TYPE
+
+

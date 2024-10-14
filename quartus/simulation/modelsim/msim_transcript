@@ -1,0 +1,61 @@
+# Reading pref.tcl
+# do vending_machine_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/HCMUT-of-BANG/GITHUB-Projects/Project-01-Vending-Machine/src {D:/HCMUT-of-BANG/GITHUB-Projects/Project-01-Vending-Machine/src/vending_machine.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:48:02 on Oct 14,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/HCMUT-of-BANG/GITHUB-Projects/Project-01-Vending-Machine/src" D:/HCMUT-of-BANG/GITHUB-Projects/Project-01-Vending-Machine/src/vending_machine.sv 
+# -- Compiling module vending_machine
+# 
+# Top level modules:
+# 	vending_machine
+# End time: 07:48:02 on Oct 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/HCMUT-of-BANG/GITHUB-Projects/Project-01-Vending-Machine/quartus/../tb {D:/HCMUT-of-BANG/GITHUB-Projects/Project-01-Vending-Machine/quartus/../tb/vending_machine_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:48:02 on Oct 14,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/HCMUT-of-BANG/GITHUB-Projects/Project-01-Vending-Machine/quartus/../tb" D:/HCMUT-of-BANG/GITHUB-Projects/Project-01-Vending-Machine/quartus/../tb/vending_machine_tb.sv 
+# -- Compiling module vending_machine_tb
+# 
+# Top level modules:
+# 	vending_machine_tb
+# End time: 07:48:02 on Oct 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  vending_machine_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" vending_machine_tb 
+# Start time: 07:48:02 on Oct 14,2024
+# Loading sv_std.std
+# Loading work.vending_machine_tb
+# Loading work.vending_machine
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $finish    : D:/HCMUT-of-BANG/GITHUB-Projects/Project-01-Vending-Machine/quartus/../tb/vending_machine_tb.sv(32)
+#    Time: 2010 ps  Iteration: 0  Instance: /vending_machine_tb
+# 1
+# Break in Module vending_machine_tb at D:/HCMUT-of-BANG/GITHUB-Projects/Project-01-Vending-Machine/quartus/../tb/vending_machine_tb.sv line 32
+add wave -position insertpoint sim:/vending_machine_tb/DUT/*
+# Break key hit
+restart -f
+run -all
+# ** Note: $finish    : D:/HCMUT-of-BANG/GITHUB-Projects/Project-01-Vending-Machine/quartus/../tb/vending_machine_tb.sv(32)
+#    Time: 2010 ps  Iteration: 0  Instance: /vending_machine_tb
+# 1
+# Break in Module vending_machine_tb at D:/HCMUT-of-BANG/GITHUB-Projects/Project-01-Vending-Machine/quartus/../tb/vending_machine_tb.sv line 32
+# End time: 10:07:15 on Oct 14,2024, Elapsed time: 2:19:13
+# Errors: 0, Warnings: 0
