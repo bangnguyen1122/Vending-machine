@@ -1,18 +1,18 @@
 module vending_machine_tb;
-	logic 		clk_i_tb, rst_ni_tb;
-	logic 		nickle_i_tb, dime_i_tb, quarter_i_tb;
+	logic 	    clk_i_tb, rst_ni_tb;
+	logic 	    nickle_i_tb, dime_i_tb, quarter_i_tb;
 	logic 	    soda_o_tb;
 	logic [2:0] change_o_tb;
 	logic [1:0] random;
 	logic [7:0] current_state_tb;
 	
 vending_machine	DUT(
-	 .clk_i		(clk_i_tb	 )
-	,.rst_ni	(rst_ni_tb	 )
+	.clk_i		(clk_i_tb    )
+	,.rst_ni	(rst_ni_tb   )
 	,.nickle_i	(nickle_i_tb )
-	,.dime_i	(dime_i_tb	 )
+	,.dime_i	(dime_i_tb   )
 	,.quarter_i	(quarter_i_tb)
-	,.soda_o	(soda_o_tb	 )
+	,.soda_o	(soda_o_tb   )
 	,.change_o	(change_o_tb )
 );
 
