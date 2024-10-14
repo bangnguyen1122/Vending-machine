@@ -8,14 +8,14 @@ module vending_machine (
 	logic [8:0] current_state, next_state;
 
 	localparam logic [8:0]	S0  = 9'b0_0000_0001,
-							S5	= 9'b0_0000_0010,
-							S10 = 9'b0_0000_0100,
-							S15 = 9'b0_0000_1000,
-							S20 = 9'b0_0001_0000,
-							S25 = 9'b0_0010_0000,
-							S30 = 9'b0_0100_0000,
-							S35 = 9'b0_1000_0000,
-							S40 = 9'b1_0000_0000;
+				S5  = 9'b0_0000_0010,
+				S10 = 9'b0_0000_0100,
+				S15 = 9'b0_0000_1000,
+				S20 = 9'b0_0001_0000,
+				S25 = 9'b0_0010_0000,
+				S30 = 9'b0_0100_0000,
+				S35 = 9'b0_1000_0000,
+				S40 = 9'b1_0000_0000;
 
 	always_ff @(posedge clk_i or negedge rst_ni) begin
 		if (!rst_ni) current_state <= S0;
