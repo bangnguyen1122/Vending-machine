@@ -66,5 +66,4 @@ module vending_machine (
 			default: {soda_o, change_o} = 4'b0000;
 		endcase
 	end 
-	
 endmodule 
