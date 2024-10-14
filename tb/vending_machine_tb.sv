@@ -45,6 +45,5 @@ vending_machine	DUT(
 			endcase	
 		end 
 	end 
-	
 endmodule 
 
